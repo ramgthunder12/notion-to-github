@@ -46,6 +46,7 @@ Notion 내용이 수정되면 GitHub 저장소도 자동으로 갱신되어 항�
 3. GitHub 설정 → GitHub Actions 및 Secrets 설정
 
 ### 📂 디렉토리 구조
+```
 .
 ├── notion-sync/                  # Notion → GitHub 변환 관련 디렉토리
 │   ├── notion_to_md.py           # 실행 스크립트 (Notion 페이지를 Markdown으로 변환)
@@ -53,5 +54,5 @@ Notion 내용이 수정되면 GitHub 저장소도 자동으로 갱신되어 항�
 └── .github/
     └── workflows/                # GitHub Actions 워크플로 디렉토리
         └── notion-sync.yml       # Notion Sync 자동 실행 설정 파일
-
+```
 
