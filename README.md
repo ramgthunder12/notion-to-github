@@ -37,3 +37,21 @@ Notion 내용이 수정되면 GitHub 저장소도 자동으로 갱신되어 항�
 
 ### 수동 실행
 필요할 때는 GitHub Actions에서 직접 실행해 즉시 백업을 진행할 수 있습니다.
+
+## 📖 사용방법  
+
+### ⏩ 큰흐름
+1. GitHub 코드 가져오기 → 레포지토리를 클론
+2. Notion 설정 → 데이터베이스 및 API 토큰 준비
+3. GitHub 설정 → GitHub Actions 및 Secrets 설정
+
+### 📂 디렉토리 구조
+.
+├── notion-sync/                  # Notion → GitHub 변환 관련 디렉토리
+│   ├── notion_to_md.py           # 실행 스크립트 (Notion 페이지를 Markdown으로 변환)
+│   └── .env                      # 로컬 전용 환경변수 파일 (OUTPUT_DIR 설정)
+└── .github/
+    └── workflows/                # GitHub Actions 워크플로 디렉토리
+        └── notion-sync.yml       # Notion Sync 자동 실행 설정 파일
+
+
