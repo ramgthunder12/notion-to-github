@@ -55,3 +55,61 @@ Notion 내용이 수정되면 GitHub 저장소도 자동으로 갱신되어 항�
         └── notion-sync.yml       # Notion Sync 자동 실행 설정 파일
 ```
 
+### 🔍 자세한 설정법
+<details>
+<summary>1. 🐙 GitHub 코드 가져오기 (Fork)</summary>
+
+1. Fork 버튼 클릭 (Create new fork)  
+    Notion-to-Github 레파지토리 상단에 fork 버튼 누르기
+2. 계정 선택하기
+    - Owner : 소유할 계정을 선택  
+3. Create fork 클릭
+</details>
+
+<details>
+<summary>2-1. 🗂 Notion 설정</summary>
+
+#### (1) 데이터베이스 생성
+1. Notion 회원 가입하기
+2. `/데이터베이스` 입력 → 데이터베이스 전체 페이지 선택
+3. 생성 완료
+4. 데이터베이스 이름 작성 및 테스트 페이지 작성  
+
+#### (2) Database ID 가져오기
+1. 설정 클릭(새로 만들기 옆 에 위치한 버튼)  
+2. 데이터 소스 관리 클릭
+3. 해당 데이터베이스의 `…` 클릭  
+4. 데이터 소스 ID 복사(Database ID)   
+    메모장에 붙여넣어 잠시 보관해 두기 
+
+</details>
+
+<details>
+<summary>2-2. 🗂 Notion API 생성</summary>
+
+#### (1) URL 방법
+1. [Notion Integration 페이지](https://www.notion.so/my-integrations) 접속 후 로그인  
+2. 새 API 통합 클릭  
+3. 새 API 통합 작성
+   - API 통합 이름 : `to-github`  
+     (⚠️ `notion` 이라는 단어는 포함 불가)  
+   - 관련 워크스페이스 : 데이터베이스가 있는 워크스페이스 
+   - 유형: `private`  
+4. 저장 후 API Key 복사  
+   - “표시하기” 클릭 → “복사” 클릭  
+</details>
+
+<details>
+<summary>2-3. 🗂 GitHub 연결 (DB 공유)</summary>
+
+1. 사용할 DB 맨 오른쪽 위 `…` 클릭(공유 ☆ ...)  
+2. 연결 클릭  
+3. 방금 만든 API 통합(`to-github`) 검색 후 클릭  
+4. 연결 확인  
+
+</details>
+
+<details>
+<summary>3. 🐙 GitHub 설정</summary>
+
+</details>
