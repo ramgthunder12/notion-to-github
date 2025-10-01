@@ -87,7 +87,6 @@ Notion 내용이 수정되면 GitHub 저장소도 자동으로 갱신되어 항�
 <details>
 <summary>2-2. 🗂 Notion API 생성</summary>
 
-#### (1) URL 방법
 1. [Notion Integration 페이지](https://www.notion.so/my-integrations) 접속 후 로그인  
 2. 새 API 통합 클릭  
 3. 새 API 통합 작성
