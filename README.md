@@ -111,4 +111,71 @@ Notion 내용이 수정되면 GitHub 저장소도 자동으로 갱신되어 항�
 <details>
 <summary>3. 🐙 GitHub 설정</summary>
 
+#### (1) GitHub Secret Variables 설정
+
+1. Notion to GitHub 코드를 Fork한 레포지토리에서 상단 탭의 Settings 클릭  
+<details>
+<summary>용어 설명</summary>
+
+- 클론(Clone) : 프로젝트 전체를 내 로컬 저장소(내 컴퓨터)에 복사  
+- 포크(Fork) : 프로젝트 전체를 내 원격 저장소(GitHub 계정)에 복사  
+- 레포지토리(Repository) : GitHub 저장소  
+- 탭(Tab) : GitHub 상단의 메뉴 항목  
+</details>
+
+2. 좌측 메뉴에서 Security → Secrets and variables → Actions 클릭  
+3. New repository secret 버튼 클릭  
+4. Name과 Secret 입력  
+    - Name : 환경 변수명 (반드시 일치해야 함 → 오타 주의)  
+    - Secret : 실제 값 (작성 후 다시 확인 불가 → 복사 저장 권장)  
+5. Add secret 버튼 클릭  
+
+<details>
+<summary>🔑 필수 Secret 변수</summary>
+
+- NOTION_API_KEY : Notion에서 발급받은 API 키  
+- DATABASE_ID : Notion 데이터베이스 고유 번호  
+- SENDER_EMAIL : 송신 이메일 주소 (예: ramgthunder12@gmail.com)  
+- EMAIL_PASSWORD : 송신 이메일 계정 비밀번호 (예: NotionToGithub9080$)  
+- RECIVER_EMAIL : 오류 알림을 받을 수신 이메일 주소 (예: ramgthunder12@gmail.com)  
+- GH_TOKEN : GitHub에서 push/commit 권한을 가진 Personal Access Token  
+
+<details>
+<summary>GitHub Personal Access Token 발급 방법</summary>
+
+1. 프로필 아이콘 → Settings  
+2. 좌측 하단 Developer settings  
+3. Personal Access Tokens → Tokens (classic)  
+4. Generate new token (classic) 클릭  
+5. Note에 GH_TOKEN 입력  
+6. 권한 체크
+    - workflow (GitHub Actions)  
+    - write:packages (GitHub Package)  
+    - admin:repo_hook  
+    - delete_repo  
+7. Generate token 클릭  
+8. 복사 후 메모장에 저장  
+</details>
+</details>
+
+---
+
+#### (2) .env 설정
+- 파일 위치 : 프로젝트 루트  
+- 설정 방법 : `.env` 파일에서 TILDB 글씨를 지우고 원하는 파일명 작성  
+- 필수 값  
+  - OUTPUT_DIR : Notion 페이지를 저장할 폴더명 (Notion 데이터베이스 이름과 동일하게 설정 권장)  
+
+---
+
+#### (3) 추가 설정
+<details>
+<summary>⏰ 시간 설정</summary>
+
+- 파일 위치 : `.github/workflows/workflow_dispatch.yml`  
+- 설정 방법 : 7번 줄의 23을 원하는 시간으로 변경  
+  - GitHub Actions는 UTC 기준으로 동작  
+  - 예: 23시 (UTC) = 한국 시간 오전 8시  
+  - 원하는 한국 시간 -9시간 값으로 설정  
+</details>
 </details>
