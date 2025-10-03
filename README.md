@@ -127,19 +127,7 @@ Notion 내용이 수정되면 GitHub 저장소도 자동으로 갱신되어 항�
 3. New repository secret 버튼 클릭  
 4. Name과 Secret 입력  
     - Name : 환경 변수명 (반드시 일치해야 함 → 오타 주의)  
-    - Secret : 실제 값 (작성 후 다시 확인 불가 → 복사 저장 권장)  
-5. Add secret 버튼 클릭  
-
-<details>
-<summary>🔑 필수 Secret 변수</summary>
-
-- NOTION_API_KEY : Notion에서 발급받은 API 키  
-- DATABASE_ID : Notion 데이터베이스 고유 번호  
-- SENDER_EMAIL : 송신 이메일 주소 (예: ramgthunder12@gmail.com)  
-- EMAIL_PASSWORD : 송신 이메일 계정 비밀번호 (예: NotionToGithub9080$)  
-- RECIVER_EMAIL : 오류 알림을 받을 수신 이메일 주소 (예: ramgthunder12@gmail.com)  
-- GH_TOKEN : GitHub에서 push/commit 권한을 가진 Personal Access Token  
-
+    - Secret : 실제 값 (작성 후 다시 확인 불가 → 복사 저장 권장)
 <details>
 <summary>GitHub Personal Access Token 발급 방법</summary>
 
@@ -156,6 +144,19 @@ Notion 내용이 수정되면 GitHub 저장소도 자동으로 갱신되어 항�
 7. Generate token 클릭  
 8. 복사 후 메모장에 저장  
 </details>
+5. Add secret 버튼 클릭  
+
+<details>
+<summary>🔑 필수 Secret 변수</summary>
+
+- NOTION_API_KEY : Notion에서 발급받은 API 키  
+- DATABASE_ID : Notion 데이터베이스 고유 번호  
+- SENDER_EMAIL : 송신 이메일 주소 (예: ramgthunder12@gmail.com)  
+- EMAIL_PASSWORD : 송신 이메일 계정 비밀번호 (예: NotionToGithub9080$)  
+- RECIVER_EMAIL : 오류 알림을 받을 수신 이메일 주소 (예: ramgthunder12@gmail.com)  
+- GH_TOKEN : GitHub에서 push/commit 권한을 가진 Personal Access Token  
+
+
 </details>
 
 ---
