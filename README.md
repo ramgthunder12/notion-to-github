@@ -132,7 +132,7 @@ Notion 내용이 수정되면 GitHub 저장소도 자동으로 갱신되어 항�
                 
         1. name : NOTION_API_KEY  
             secret : Notion에서 발급받은 API 키  
-            ➜[NOTION_API_KEY 발급방법](#2-Notion-API-생성)
+            ➜[NOTION_API_KEY 발급방법](#3-Notion-API-생성)
         
         2. name : DATABASE_ID  
             secret : Notion 데이터베이스 고유 번호  
