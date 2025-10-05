@@ -144,7 +144,7 @@ Notion 내용이 수정되면 GitHub 저장소도 자동으로 갱신되어 항�
         4. name : EMAIL_PASSWORD  
             secret : 송신 이메일 계정 비밀번호 (예: NotionToGithub9080$)
         
-        5. name : RECIVER_EMAIL  
+        5. name : RECEIVER_EMAIL  
             secret : 오류 알림을 받을 수신 이메일 주소 (예: [ramgthunder12@gmail.com](mailto:ramgthunder12@gmail.com))      
         
         6. name : GH_TOKEN  
