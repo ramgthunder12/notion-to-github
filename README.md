@@ -187,4 +187,12 @@ Notion 내용이 수정되면 GitHub 저장소도 자동으로 갱신되어 항�
   - 예: 23시 (UTC) = 한국 시간 오전 8시  
   - 원하는 한국 시간 -9시간 값으로 설정  
 </details>
+<details>  
+<summary>🕹️ 수동 시작</summary>
+
+1. 포크한 레포지토리에서 상단 탭 Actions 클릭  
+2. 왼쪽 목록에서 Notion to GitHub Commit 선택  
+3. Run workflow 클릭  
+4. 초록색 Run workflow 버튼 클릭  
+</details>  
 </details>
