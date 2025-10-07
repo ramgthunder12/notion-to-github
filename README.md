@@ -50,9 +50,10 @@ Notion 내용이 수정되면 GitHub 저장소도 자동으로 갱신되어 항�
 ├── notion-sync/                  # Notion → GitHub 변환 관련 디렉토리
 │   ├── notion_to_md.py           # 실행 스크립트 (Notion 페이지를 Markdown으로 변환)
 │   └── .env                      # 로컬 전용 환경변수 파일 (OUTPUT_DIR 설정)
-└── .github/
-    └── workflows/                # GitHub Actions 워크플로 디렉토리
-        └── notion-to-github.yml       # Notion Sync 자동 실행 설정 파일
+├── .github/
+│   └── workflows/                # GitHub Actions 워크플로 디렉토리
+│       └── notion-to-github.yml       # Notion Sync 자동 실행 설정 파일
+└── images/                  # README 설명 이미지 디렉토리
 ```
 
 ### 🔍 자세한 설정법
