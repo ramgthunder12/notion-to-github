@@ -1,7 +1,7 @@
 # 📦 Notion to GitHub Sync
 
 Notion Database 페이지를 GitHub 저장소에 Markdown 형식으로 자동 백업하는 도구입니다.
-GitHub Actions를 이용해 매일 정해진 시간에 자동 실행되며, 수동 실행도 지원합니다.
+GitHub Actions를 이용해 매일 정해진 시간에 자동 실행되며, 수동 실행을 통해 테스트를 지원합니다.
 
 ## 📝 프로젝트 소개
 
@@ -32,10 +32,12 @@ Notion 내용이 수정되면 GitHub 저장소도 자동으로 갱신되어 항�
 제목(Heading), 문단, 체크박스, 인용구, 코드 블록, 토글, 리스트 등 다양한 블록 형식이 Markdown으로 변환됩니다.
 
 ### 자동 실행
-매일 한국 시간 기준 오전 8시에 자동으로 백업이 실행됩니다.
+매일 한국 시간 기준 오전 8시에 자동으로 백업이 실행됩니다.  
+기본으로 오전 8시에 동작하며, 수동 실행을 통해 백업이 정상적으로 작동하는지 직접 테스트해볼 수 있습니다.
 
 ### 수동 실행
 필요할 때는 GitHub Actions에서 직접 실행해 즉시 백업을 진행할 수 있습니다.
+
 
 ## 📖 사용방법  
 
@@ -204,12 +206,16 @@ Notion 내용이 수정되면 GitHub 저장소도 자동으로 갱신되어 항�
   - 예: 23시 (UTC) = 한국 시간 오전 8시  
   - 원하는 한국 시간 -9시간 값으로 설정  
 </details>
-<details>  
-<summary>🕹️ 수동 시작</summary>
+<details>
+<summary>🕹️ 수동 시작</summary>  
 
 1. 포크한 레포지토리에서 상단 탭 Actions 클릭  
 2. 왼쪽 목록에서 Notion to GitHub Commit 선택  
 3. Run workflow 클릭  
 4. 초록색 Run workflow 버튼 클릭  
-</details>  
+5. 실행 목록에 초록색 동그라미🟢 가 보이면 완료  
+6. 레포지토리에서 OUTPUT_DIR에 입력한 폴더가 생성됐는지 확인 → 폴더에 들어가 Notion 데이터베이스 페이지들이 정상 저장됐는지 확인
+
+</details>
+
 </details>
