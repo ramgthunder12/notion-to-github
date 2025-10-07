@@ -60,23 +60,29 @@ Notion 내용이 수정되면 GitHub 저장소도 자동으로 갱신되어 항�
 <summary>1. 🐙 GitHub 코드 가져오기 (Fork)</summary>
 
 1. Fork 버튼 클릭 (Create new fork)  
-    Notion-to-Github 레파지토리 상단에 fork 버튼 누르기
+    Notion-to-Github 레파지토리 상단에 fork 버튼 누르기  
+    ![1 GitHub 코드 가져오기 (fork)_1 Fork 버튼 클릭(Create new fork).png](./images/1%20GitHub%20코드%20가져오기%20(fork)_1%20Fork%20버튼%20클릭(Create%20new%20fork).png)
 2. Owner(계정) 선택하기
     - Owner : Notion-to-Github 레파지토리를 저장 할 계정을 선택  
+    ![1 GitHub 코드 가져오기 (fork)_2 계정 선택하기.png](./images/1%20GitHub%20코드%20가져오기%20(fork)_2%20계정%20선택하기.png)
 3. Create fork 클릭
 </details>
 
 <details>
 <summary>2. 🗂 Notion 설정</summary>
 
-#### (1) 데이터베이스 생성
+#### (1) 데이터베이스 생성  
+
 1. Notion 회원 가입하기
 2. `/데이터베이스` 입력 → 데이터베이스-**전체 페이지** 선택(Table-Fullpage)  
-[데이터베이스-전체페이지 생성 참고](https://m.blog.naver.com/freewill_life/221928219258)
+[데이터베이스-전체페이지 생성 참고](https://m.blog.naver.com/freewill_life/221928219258)  
+![(1) 데이터베이스 생성_1 데이터베이스 입력-전체 페이지 생성.png](./images/(1)%20데이터베이스%20생성_1%20데이터베이스%20입력-전체%20페이지%20생성.png)
 3. 데이터 베이스 생성 완료
 4. 데이터베이스 이름 작성 및 테스트 페이지 작성  
+![(1)데이터베이스 생성_4데이터베이스 이름 작성 및 테스트 페이지 작성](./images/(1)데이터베이스%20생성_4데이터베이스%20이름%20작성%20및%20테스트%20페이지%20작성.png)  
 
-#### (2) Database ID 가져오기
+#### (2) Database ID 가져오기  
+
 1. 데이터베이스에 가서 창닫기 버튼 옆 공유 클릭
 2. 링크 복사 클릭
 3. https://www.notion.so/**DATABASE_ID**?v=~~~  
@@ -88,22 +94,29 @@ Notion 내용이 수정되면 GitHub 저장소도 자동으로 갱신되어 항�
 
 1. [Notion Integration 페이지](https://www.notion.so/my-integrations) 접속 후 로그인  
 2. 새 API 통합 클릭  
+![(3) Notion API 생성_2 새 API 통합 개발 클릭.png](./images/(3)%20Notion%20API%20생성_2%20새%20API%20통합%20개발%20클릭.png)
 3. 새 API 통합 작성  
     - API 통합 이름 : `to-github`(추천)
     (⚠️ `notion` 이라는 단어는 포함 불가)
     - 관련 워크스페이스 : 데이터베이스가 있는 워크스페이스
-    - 유형: `private`
-4. “API 통합이 생성되었습니다.” API 통합 설정 구성 클릭
+    - 유형: `private`  
+    ![(3)Notion API 생성_3 새 API 통합작성.png](./images/(3)Notion%20API%20생성_3%20새%20API%20통합작성.png)
+4. “API 통합이 생성되었습니다.” API 통합 설정 구성 클릭  
+![(3)Notion API 생성_4 API통합이 생성되었습니다.png](./images/(3)Notion%20API%20생성_4%20API통합이%20생성되었습니다.png)
 5. 저장 후 API Key 복사
     - “표시하기” 클릭 → “복사” 클릭
     - 메모장에 “NOTION_API_KEY : (여기에 붙여 넣기)” 정리 해두기
-    - [GitHub Secret Variables 설정 시 필요함](#1-GitHub-Secret-Variables-설정)
-
+    - [GitHub Secret Variables 설정 시 필요함](#1-GitHub-Secret-Variables-설정)  
+    ![(3)Notion API 생성_5 저장 후 API key 복사.png](./images/(3)Notion%20API%20생성_5%20저장%20후%20API%20key%20복사.png)  
+    
 #### (4) GitHub 연결 (DB 공유)
 
-1. 사용할 데이터베이스에서 창닫기 버튼 아래 `…` 클릭
+1. 사용할 데이터베이스에서 창닫기 버튼 아래 `…` 클릭  
+![(4) GitHub 연결 (DB 공유)_1사용할 데이터베이스에서 창닫기 버튼 아래클릭.png](./images/(4)%20GitHub%20연결%20(DB%20공유)_1사용할%20데이터베이스에서%20창닫기%20버튼%20아래클릭.png)  
 2. 연결 클릭
-3. [내가 만든 Notion API 이름(`to-github` 추천)](#3-Notion-API-생성) 검색 후 클릭
+3. [내가 만든 Notion API 이름(`to-github` 추천)](#3-Notion-API-생성) 검색 후 클릭  
+![(4) Github 연결(DB공유)_3 내가만든 API이름 검색.png](./images/(4)%20Github%20연결(DB공유)_3%20내가만든%20API이름%20검색.png)
+
 </details>
 
 <details>
@@ -155,7 +168,7 @@ Notion 내용이 수정되면 GitHub 저장소도 자동으로 갱신되어 항�
 
             1. 프로필 아이콘 → Settings
             2. 좌측 하단 Developer settings
-            3. Personal Access Tokens → Tokens (classic)
+            3. Personal Access Tokens → Tokens (classic)  
             4. Generate new token (classic) 클릭
             5. Note에 GH_TOKEN 입력
             6. 권한 체크
@@ -163,8 +176,11 @@ Notion 내용이 수정되면 GitHub 저장소도 자동으로 갱신되어 항�
                 - write:packages (GitHub Package)
                 - admin:repo_hook
                 - delete_repo
+                ![(1) GitHub Secret Variables 설정_3 Name과 Secret 입력_GitHub Personal Access Token 발급 방법_권한체크_1.png](./images/(1)%20GitHub%20Secret%20Variables%20설정_3%20Name과%20Secret%20입력_GitHub%20Personal%20Access%20Token%20발급%20방법_권한체크_1.png)  
+                ![(1) GitHub Secret Variables 설정_3 Name과 Secret 입력_GitHub Personal Access Token 발급 방법_권한체크_2.png](./images/(1)%20GitHub%20Secret%20Variables%20설정_3%20Name과%20Secret%20입력_GitHub%20Personal%20Access%20Token%20발급%20방법_권한체크_2.png)
             7. Generate token 클릭
-            8. 복사 후 메모장에 저장
+            8. 복사 후 메모장에 저장  
+            ![(1)GitHub Secret Variables 설정_3 Name과 Secret 입력_GitHub Personal Access Token 발급 방법_8 복사 후 메모장에 저장.png](./images/(1)GitHub%20Secret%20Variables%20설정_3%20Name과%20Secret%20입력_GitHub%20Personal%20Access%20Token%20발급%20방법_8%20복사%20후%20메모장에%20저장.png)
             </details>
             </details>  
 
@@ -181,7 +197,7 @@ Notion 내용이 수정되면 GitHub 저장소도 자동으로 갱신되어 항�
 <details>
 <summary>⏰ 시간 설정</summary>
 
-- 파일 위치 : `.github/workflows/workflow_dispatch.yml`  
+- 파일 위치 : [./.github/workflows/workflow_dispatch.yml](./.github\workflows\notion-to-github.yml)  
 - 설정 방법 : 7번 줄의 23을 원하는 시간으로 변경  
   - GitHub Actions는 UTC 기준으로 동작  
   - 예: 23시 (UTC) = 한국 시간 오전 8시  
