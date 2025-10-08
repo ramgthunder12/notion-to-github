@@ -210,10 +210,15 @@ Notion 내용이 수정되면 GitHub 저장소도 자동으로 갱신되어 항�
 <summary>🕹️ 수동 시작</summary>  
 
 1. 포크한 레포지토리에서 상단 탭 Actions 클릭  
+![(3)추가설정_수동시작_1.png](./images/(3)추가설정_수동시작_1.png)  
 2. 왼쪽 목록에서 Notion to GitHub Commit 선택  
+![(3)추가설정_수동시작_2.png](./images/(3)추가설정_수동시작_2.png)  
 3. Run workflow 클릭  
+![(3)추가설정_수동시작_3.png](./images/(3)추가설정_수동시작_3.png)  
 4. 초록색 Run workflow 버튼 클릭  
+![(3)추가설정_수동시작_4.png](./images/(3)추가설정_수동시작_4.png)  
 5. 실행 목록에 초록색 동그라미🟢 가 보이면 완료  
+![(3)추가설정_수동시작_5.png](./images/(3)추가설정_수동시작_5.png)  
 6. 레포지토리에서 OUTPUT_DIR에 입력한 폴더가 생성됐는지 확인 → 폴더에 들어가 Notion 데이터베이스 페이지들이 정상 저장됐는지 확인
 
 </details>
