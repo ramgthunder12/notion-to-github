@@ -226,3 +226,17 @@ Notion 내용이 수정되면 GitHub 저장소도 자동으로 갱신되어 항�
 </details>
 
 </details>
+
+## 🧩 문제 해결 FAQ
+
+- **Settings 탭이 안 보일 때**
+  - 오른쪽 상단 `...` 클릭 또는 전체화면 전환
+- **저장 한도**
+  - GitHub 리포지토리: 1GB 이하 권장 (100MB 이상은 LFS 필요)
+
+
+## 🚀 향후 계획 (Roadmap)
+
+- [ ] 코드 블록 내부 텍스트 변환 개선  
+
+문의: **ramgthunder12@gmail.com**
