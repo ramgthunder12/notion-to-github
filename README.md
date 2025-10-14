@@ -41,6 +41,16 @@ Notion 내용이 수정되면 GitHub 저장소도 자동으로 갱신되어 항�
 
 ## 📖 사용방법  
 
+### 📝 설문 참여 안내  
+이 도구를 사용하기 전 아래 설문에 참여해주세요.  
+[**👉 설문지 바로가기**](https://docs.google.com/forms/d/e/1FAIpQLSe3cP1dzmnMDuKH6M5NMfJI5lD7JHMYyW2tYokaSCW7cU5M4A/viewform?usp=dialog)
+
+설문 순서  
+1. 사전 문답에 답변합니다.  
+2. README의 자세한 설정 방법에 따라 도구를 설정하고 사용합니다.  
+3. 사용 후 나머지 문답을 작성해 제출합니다.
+
+
 ### ⏩ 큰흐름
 1. GitHub 코드 가져오기 → 레포지토리를 클론
 2. Notion 설정 → 데이터베이스 및 API 토큰 준비
