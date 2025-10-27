@@ -242,7 +242,11 @@ Notion 내용이 수정되면 GitHub 저장소도 자동으로 갱신되어 항�
 - **Settings 탭이 안 보일 때**
   - 오른쪽 상단 `...` 클릭 또는 전체화면 전환
 - **저장 한도**
-  - GitHub 리포지토리: 1GB 이하 권장 (100MB 이상은 LFS 필요)
+  - GitHub 리포지토리: 1GB 이하 권장 (100MB 이상은 LFS 필요)  
+- **토큰 만료**
+  GitHub 가입 시 사용한 이메일로 만료 알림이 오면,  
+  새 토큰을 생성해 다시 등록해야 합니다. ![GitHub Secret Variables 설정 방법](#1-GitHub-Secret-Variables-설정)
+
 
 
 ## 🚀 향후 계획 (Roadmap)
