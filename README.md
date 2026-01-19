@@ -254,6 +254,7 @@ Notion 내용이 수정되면 GitHub 저장소도 자동으로 갱신되어 항�
 ## 🚀 향후 계획 (Roadmap)
 
 - [ ] 코드 블록 내부 텍스트 변환 개선
-- [x] 설문 질문 작성  
+- [ ] README 영어 버전 추가
+- [x] 설문 질문 작성
 
 문의: **ramgthunder12@gmail.com**
